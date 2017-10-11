@@ -73,14 +73,14 @@ abline(h=-log10(8.3*10^-6), lty=2)
 data(index)
 table(table(index))
 
-## ----output, cache=TRUE, tidy=TRUE-------------------------------------------------------------------
+## ----output, cache=TRUE, tidy=TRUE---------------------------------------
 pcev_out <- computePCEV(methylation, covariate = pheno,
                         estimation = "block", 
                         inference = "permutation",
                         index = index, nperm=10)
 pcev_out
 
-## ----manPlotVIP, fig.align='center', fig.cap="Manhattan-VIMP plot"-----------------------------------
+## ----manPlotVIP, fig.align='center', fig.cap="Manhattan-VIMP plot"-------
 # Manhattan plot VIMP
 BLK_boundaries <- c(11235000, 11385000)
 plot(position$Pos/1e6, pcev_out$VIMP, xlab = "Position (Mb)",
@@ -89,6 +89,6 @@ plot(position$Pos/1e6, pcev_out$VIMP, xlab = "Position (Mb)",
 lines(x = BLK_boundaries/1e6, y = rep_len(0.9,2),
       lwd = 3, col = 'red')
 
-## ----------------------------------------------------------------------------------------------------
+## ------------------------------------------------------------------------
 sessionInfo()
 
