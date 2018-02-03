@@ -73,11 +73,11 @@ abline(h=-log10(8.3*10^-6), lty=2)
 data(index)
 table(table(index))
 
-## ----output, cache=TRUE, tidy=TRUE---------------------------------------
+## ----output, tidy=TRUE---------------------------------------------------
 pcev_out <- computePCEV(methylation, covariate = pheno,
                         estimation = "block", 
                         inference = "permutation",
-                        index = index, nperm=10)
+                        index = index, nperm = 10)
 pcev_out
 
 ## ----manPlotVIP, fig.align='center', fig.cap="Manhattan-VIMP plot"-------

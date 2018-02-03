@@ -1,6 +1,6 @@
 Package: pcev
 Title: Principal Component of Explained Variance
-Version: 2.2.1
+Version: 2.2.2
 Authors@R: c(
   person("Maxime", "Turgeon", email = "maxime.turgeon@mail.mcgill.ca",
   role = c("aut", "cre")),
@@ -25,11 +25,11 @@ Suggests: knitr
 VignetteBuilder: knitr
 RoxygenNote: 6.0.1
 NeedsCompilation: no
-Packaged: 2017-10-11 02:16:39 UTC; mturgeon
+Packaged: 2018-02-03 23:05:56 UTC; mturgeon
 Author: Maxime Turgeon [aut, cre],
   Aurelie Labbe [aut],
   Karim Oualkacha [aut],
   Stepan Grinek [aut]
 Maintainer: Maxime Turgeon <maxime.turgeon@mail.mcgill.ca>
 Repository: CRAN
-Date/Publication: 2017-10-11 03:30:56 UTC
+Date/Publication: 2018-02-03 23:14:47 UTC

@@ -1,3 +1,9 @@
+# pcev 2.2.2
+
+* Fixed to remove warnings due to conditions of length greater than one and recycling arrays in vector-array arithmetic
+
+* Updated CITATION file
+
 # pcev 2.2.1
 
 * Added adaptive selection of blocks; see documentation for `computePCEV`.
